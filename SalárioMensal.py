@@ -1,0 +1,5 @@
+horas = int(input('Quantas horas por dia você trabalha? : '))
+dias = int(input('Quantos dias da semana você trabalha? : '))
+din_hora = float(input('Quanto vale sua mão de obra por hora (US$) ? : '))
+sal_mensal = int(((horas * dias) * din_hora)* 4)
+print(f'Seu salário mensal será de {sal_mensal} US$ ')

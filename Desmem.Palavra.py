@@ -1,0 +1,12 @@
+
+a= input('Digite algo : ')
+print('=='*10)
+print('O tipo primitivo desse valor é',type(a))
+print('É um número? ',a.isnumeric())
+print('É uma palavra ? ',a.isalpha())
+print('Se for uma palavra está em maiusculo? ',a.isupper())
+print('Se for uma palavra, está em minusculo? ',a.islower())
+print('É um alfa-numérico? ',a.isalnum())
+print('Só tem espaço? ',a.isspace())
+print('=='*10)
+print('Essa foram as especificações')
