@@ -1,2 +1,2 @@
-# PythonIniciante
-usado para salvar códigos de um iniciante
+# Python
+Usado para salvar códigos de Python feito por um iniciante
