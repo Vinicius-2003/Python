@@ -10,4 +10,4 @@ class Usuario:
         print(f"Seu cargo é {nome} e sua idade é {self.idade}")
 
 eu = Usuario("Vini",21)
-eu.mostrar("perícles")
+# eu.mostrar("perícles")
