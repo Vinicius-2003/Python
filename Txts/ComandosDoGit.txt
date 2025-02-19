@@ -1,0 +1,13 @@
+- (git init) : inicializar
+- (git status) : status do código, alterações, atualizações...
+- (git branch) : mostram os "galhos" onde se pode alterar o código fonte, sem de fato alterar o código fonte
+- (git branch xxxx) : cria uma branch nova
+- (git checkout xxxx) : muda de uma branch para outra
+- (git add .) : prepara todos os arquivos pendentes para serem salvos
+- (git add <nome_do_arquivo>) : prepara arquivo pendentes para ser salvos
+- (git commit -m "xxxx") : salva os arquivos com uma mensagem
+- (git commit -a -m "xxxx") : salva o arquivo com uma mensagem de commit, sem precisar fazer o arquivo passar pela área de preparação 
+- (git log) : mostra o histórico de commits
+- (git reflog) : mostra histórico de versões
+- (git reset --hard <numero_do_id_da_versao>): volta o código para uma versão anterior ou para uma versão mais atual
+- (echo > <nome_da_pasta>\<nome_do_arquivo>): criar um arquivo direto pelo terminal

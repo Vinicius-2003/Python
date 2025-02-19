@@ -1,0 +1,21 @@
+#Criar conexão com o banco
+banco = sqlite3.connect('<nome_do_banco>.db')
+
+#Criar um cursor para realizar os comandos no banco de dados
+cursor = banco.cursor()
+
+#Criação da tabela no banco de dados
+cursor.execute("CREATE TABLE <nome_da_tabela> (### text, ### integer)")
+
+#Inserir valores na tabela
+cursor.execute("INSERT INTO pessoas VALUES ('Vinícius', 21)")
+
+#Inserir valores inputados pelo usuário
+cursor.execute("INSERT INTO pessoas VALUES ('{}', {})".format(nome,idade))
+
+#Printar informações do Banco
+cursor.execute("SELECT * FROM pessoas")
+print(cursor.fetchall())
+
+#Salvar informações
+banco.commit()
