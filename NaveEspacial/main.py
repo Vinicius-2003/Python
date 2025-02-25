@@ -46,31 +46,30 @@ class NaveEspacial:
         self.energy = 100
         print(f"{self.name} recarregou sua energia.")
 
-    def randomRecharge(self):
-        energy = random.randint(1, 101)
-        print(f"{self.name} recebeu {energy} de energia ")
-        self.energy = energy
 
 
 # Exemplo de uso
 nave1 = NaveEspacial("Falcon")
 nave2 = NaveEspacial("Águia")
 
-nave1.move()
-nave2.turn("esquerda")
+while (nave1.alive and nave2.alive == True):
+        nave1.move()
+        nave2.turn("esquerda")
 
-nave1.shoot()
-nave2.hit(20)
+        nave1.shoot()
+        nave2.hit(20)
+        if nave2.alive == False:
+            break
 
-randomPlayer = random.randint(1, 2)
+        nave2.shoot()
+        nave1.hit(10)
+        
+        if nave1.alive == False:
+            break
 
-if randomPlayer == 1:
-    nave1.randomRecharge()
-elif randomPlayer == 2:
-    nave2.randomRecharge()
+        nave1.shoot()
+        nave2.hit(3)
+        
+        if nave2.alive == False:
+            break
 
-nave2.shoot()
-nave1.hit(10)
-
-nave1.shoot()
-nave2.hit(3)
